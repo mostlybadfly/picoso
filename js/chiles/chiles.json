@@ -1,0 +1,55 @@
+[{
+  "name": "Guajillo",
+  "flavor": "sweet, tart",
+  "heat": 2
+},
+{
+  "name": "Ancho",
+  "flavor": "sweet,earthy",
+  "heat": 1
+},
+{
+  "name": "Mulato",
+  "flavor": "raisin, chocolate",
+  "heat": 1
+},
+{
+  "name": "Serrano",
+  "flavor": "vegetal",
+  "heat": 4
+},
+{
+  "name": "Jalapeño",
+  "flavor": "vegetal",
+  "heat": 3
+},
+{
+  "name": "Habanero",
+  "flavor": "fruity, vegetal",
+  "heat": 5
+},
+{
+  "name": "Árbol",
+  "flavor": "nutty",
+  "heat": 4
+},
+{
+  "name": "Piquín",
+  "flavor": "nutty",
+  "heat": 4
+},
+{
+  "name": "Cascabel",
+  "flavor": "nutty, acidic",
+  "heat": 2
+},
+{
+  "name": "Pasilla",
+  "flavor": "earthy, chocolate",
+  "heat": 1
+},
+{
+  "name": "Poblano",
+  "flavor": "vegetal",
+  "heat": 1
+}]

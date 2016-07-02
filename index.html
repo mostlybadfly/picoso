@@ -12,16 +12,16 @@
     <p ng-repeat="flavor in flavorGroup.flavors">{{flavor}}</p>
     </div>
     <div class="container-fluid">
-      <table class="table" id="chiles">
+      <table class="table" id="chiles" ng-controller="ChileController">
         <tr>
           <th class="text-center">Chile</th>
           <th class="text-center">Flavor</th>
           <th class="text-center">Heat</th>
         </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
+        <tr ng-repeat="chile in chiles" class="text-center">
+          <td>{{chile.name}}</td>
+          <td>{{chile.flavor}}</td>
+          <td>{{chile.heat}}</td>
         </tr>
       </table>
     </div>
