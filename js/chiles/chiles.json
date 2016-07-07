@@ -1,6 +1,6 @@
 [{
   "name": "Guajillo",
-  "flavor": "sweet, tart",
+  "flavor": "sweet,tart",
   "heat": 2
 },
 {
@@ -10,7 +10,7 @@
 },
 {
   "name": "Mulato",
-  "flavor": "raisin, chocolate",
+  "flavor": "raisin,chocolate",
   "heat": 1
 },
 {
@@ -25,7 +25,7 @@
 },
 {
   "name": "Habanero",
-  "flavor": "fruity, vegetal",
+  "flavor": "fruity,vegetal",
   "heat": 5
 },
 {
@@ -40,12 +40,12 @@
 },
 {
   "name": "Cascabel",
-  "flavor": "nutty, acidic",
+  "flavor": "nutty,acidic",
   "heat": 2
 },
 {
   "name": "Pasilla",
-  "flavor": "earthy, chocolate",
+  "flavor": "earthy,chocolate",
   "heat": 1
 },
 {

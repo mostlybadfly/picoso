@@ -7,12 +7,16 @@
     <div id="heading">
       <h2 class="text-center">picoso!</h1>
     </div>
-    <div class="container" id="flavors" ng-controller="FlavorController as flavorGroup">
-      <button class="btn" ng-click="flavorGroup.pickFlavor('sweet')">sweet</button>
-    <p ng-repeat="flavor in flavorGroup.flavors">{{flavor}}</p>
+    <div class="container" id="flavors" ng-controller="ChileController">
+      <div class="text-center">
+        <div class="btn-group" role="group" ng-repeat="flavor in flavors">
+          <button type="button" class="btn">{{flavor}}</button>
+        </div>
+      </div>
+    <p>{{flavorGroup.flavors}}</p>
     </div>
-    <div class="container-fluid">
-      <table class="table" id="chiles" ng-controller="ChileController">
+    <div class="container-fluid" ng-controller="ChileController">
+      <table class="table" id="chiles">
         <tr>
           <th class="text-center">Chile</th>
           <th class="text-center">Flavor</th>
