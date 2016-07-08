@@ -3,26 +3,25 @@
   <head>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
   </head>
-  <body>
+  <body ng-controller="ChileController">
     <div id="heading">
       <h2 class="text-center">picoso!</h1>
     </div>
-    <div class="container" id="flavors" ng-controller="ChileController">
+    <div class="container" id="flavors">
       <div class="text-center">
-        <div class="btn-group" role="group" ng-repeat="flavor in flavors">
-          <button type="button" class="btn">{{flavor}}</button>
+        <div class="btn-group" role="group" ng-model="chileChoice" ng-repeat="chile in chiles">
+          <input class="btn" type="button" value={{chile.name}} ng-click="toggle(chile.name)">
         </div>
       </div>
-    <p>{{flavorGroup.flavors}}</p>
     </div>
-    <div class="container-fluid" ng-controller="ChileController">
+    <div class="container-fluid">
       <table class="table" id="chiles">
         <tr>
           <th class="text-center">Chile</th>
           <th class="text-center">Flavor</th>
           <th class="text-center">Heat</th>
         </tr>
-        <tr ng-repeat="chile in chiles" class="text-center">
+        <tr ng-repeat="chile in chiles | filter:chileChoice" class="text-center">
           <td>{{chile.name}}</td>
           <td>{{chile.flavor}}</td>
           <td>{{chile.heat}}</td>

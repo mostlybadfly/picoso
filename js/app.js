@@ -8,5 +8,12 @@ var picosoApp = angular.module('picosoApp', [])
         flavorInput = flavorInput.concat(chile.flavor.split(','));
       };
       $scope.flavors = Array.from(new Set(flavorInput));
+
+      $scope.toggle = function(choice) {
+        this.state = !this.state;
+        if (this.state == true){
+          $scope.chileChoice = choice
+        };
+      };
     });
   });
