@@ -10,8 +10,11 @@ picosoApp.controller('ChileController', function($scope, $http) {
     $scope.flavors = Array.from(new Set(flavorInput));
   });
 
+  $scope.selected = false;
+
   $scope.flavorChoice = {};
   $scope.toggle = function(choice) {
+    this.selected = !this.selected
     this.state = !this.state;
     if (this.state == true){
       $scope.flavorChoice[choice] = true;
