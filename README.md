@@ -1,5 +1,5 @@
 A version of the picoso app utilizing Angular.
 
 TODO:
-- Create `ng-click` function highlight rows with the chosen flavor
+- Need to do matches on EITHER chile flavor ("sweet" alone should match Guajillo)
 - Giving it some style

@@ -9,24 +9,26 @@
     </div>
     <div class="container" id="flavors">
       <div class="text-center">
-        <div class="btn-group" role="group" ng-model="chileChoice" ng-repeat="chile in chiles">
-          <input class="btn" type="button" value={{chile.name}} ng-click="toggle(chile.name)">
+        <div class="btn-group" role="group" ng-repeat="flavor in flavors">
+          <input class="btn" type="button" value={{flavor}} ng-model="flavorChoice.flavor" ng-click="toggle(flavor)">
         </div>
       </div>
     </div>
     <div class="container-fluid">
+      {{flavorChoice}}
       <table class="table" id="chiles">
         <tr>
           <th class="text-center">Chile</th>
           <th class="text-center">Flavor</th>
           <th class="text-center">Heat</th>
         </tr>
-        <tr ng-repeat="chile in chiles | filter:chileChoice" class="text-center">
+        <tr ng-repeat="chile in chiles | chileFilter:flavorChoice" class="text-center">
           <td>{{chile.name}}</td>
           <td>{{chile.flavor}}</td>
           <td>{{chile.heat}}</td>
         </tr>
       </table>
+
     </div>
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
