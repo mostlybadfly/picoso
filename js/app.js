@@ -20,21 +20,25 @@ picosoApp.controller('ChileController', function($scope, $http) {
     };
   };
 });
+
 picosoApp.filter("chileFilter", function() {
   return function(input, choices) {
-    var output = [];
     var chosen = [];
-    // loop through input, if choices are true, push to output
-    angular.forEach(choices, function(value,key) {
-      if (value == true) {chosen.push(key)};
-    });
-    chosen = chosen.join();
+    for(var choice in choices) { chosen.push(choices[choice])};
+    if (chosen.every(isFalse)){return input};
 
-    angular.forEach(input, function(value, key) {
-      if (chosen.includes(value.flavor.split())) {
-        output.push(value);
-      }
+    return input.filter(function (chile) {
+      var flavor = chile.flavor;
+      var flavors = flavor.split(',');
+      var flavorMatched = flavors.reduce(function (found, nextFlavor) {
+        return found || choices[nextFlavor];
+      }, false);
+
+      return flavorMatched;
     });
-    return output;
   };
 });
+
+function isFalse(element, index, array) {
+  return element === false;
+};
