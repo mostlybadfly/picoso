@@ -1,0 +1,34 @@
+
+body {
+  background-color: #bb9966;
+}
+.picosoname {
+  color: #cc5500;
+}
+
+table {
+  color: #772200;
+}
+
+#chiles td {
+  border-color: #772200;
+  border-width:1px;
+}
+
+#chiles th {
+  border-color: #bb9966;
+  color: #221111;
+}
+
+#flavorbuttons {
+  padding: 10px;
+}
+
+.active {
+  background-color: #cc5500;
+}
+
+.inactive {
+  background-color: #665533;
+  color: #bb9966;
+}
