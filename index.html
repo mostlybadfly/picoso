@@ -5,12 +5,12 @@
   </head>
   <body ng-controller="ChileController">
     <div id="heading">
-      <h2 class="text-center">picoso!</h1>
+      <h2 class="picosoname text-center">&iexcl;picoso!</h1>
     </div>
     <div class="container" id="flavors">
       <div class="text-center">
-        <div class="btn-group" role="group" ng-repeat="flavor in flavors">
-          <input class= "btn" type="button" value={{flavor}} ng-class="{'btn-success': selected}" ng-click="toggle(flavor)">
+        <div class="btn-group" id="flavorbuttons" role="group" ng-repeat="flavor in flavors">
+          <input class= "btn" type="button" value={{flavor}} ng-class="{'active': selected, 'inactive': !selected}" ng-click="toggle(flavor)">
         </div>
       </div>
     </div>
