@@ -6,5 +6,5 @@ So far, a list of chiles with flavors and heat level are presented.
 Click on the flavor buttons to sort.
 
 TODO:
-- Dynamically change button color based on state
-- Giving it some style
+- Add a Clear button
+- Add more chiles!
